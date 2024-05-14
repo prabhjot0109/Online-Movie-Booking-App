@@ -8,4 +8,6 @@
     <color name="colorOnSecondary">#FFFFFF</color>
     <color name="logintextcolor">#FFFFFF</color>
     <color name="login_page_color">#ff5946</color>
+    <color name="colorstrokebutton1">#e5e1ee</color>
+    <color name="colorstrokebutton2">#5c5d5e</color>
 </resources>
