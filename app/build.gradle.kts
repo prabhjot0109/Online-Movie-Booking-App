@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.onlinemoviebookingapp"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -43,9 +43,13 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.play.services.base)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation("com.google.android.material:material:1.4.0")
+    implementation(libs.material.v140)
+    implementation(libs.appcompat.v141)
+    implementation(libs.navigation.fragment.ktx)
+    implementation(libs.play.services.auth)
 
 }

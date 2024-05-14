@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#e5e1ee</color>
-    <color name="colorPrimaryVariant">#e5e1ee</color>
-    <color name="colorOnPrimary">#000000</color>
+    <color name="colorPrimary">#171717</color>
+    <color name="colorPrimaryVariant">#171717</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
     <color name="colorSecondary">#ff5946</color>
     <color name="colorSecondaryVariant">#ff5946</color>
-    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
     <color name="logintextcolor">#FFFFFF</color>
     <color name="login_page_color">#ff5946</color>
 </resources>

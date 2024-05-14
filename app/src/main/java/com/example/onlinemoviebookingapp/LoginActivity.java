@@ -1,4 +1,5 @@
 package com.example.onlinemoviebookingapp;
+import com.google.android.gms.common.SignInButton;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -50,6 +51,8 @@ public class LoginActivity extends AppCompatActivity {
 
         TextView signUpTextView = findViewById(R.id.signup);
 
+
+
         signUpTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,5 +60,15 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "Sign Up text clicked", Toast.LENGTH_SHORT).show();
             }
         });
+        SignInButton signInButton = findViewById(R.id.sign_in_button);
+        for (int i = 0; i < signInButton.getChildCount(); i++) {
+            View v = signInButton.getChildAt(i);
+
+            if (v instanceof TextView) {
+                TextView tv = (TextView) v;
+                tv.setText(getString(R.string.title_google_signin));  // "Continue with Google"
+                return;
+            }
+        }
     } // This is the closing brace for the onCreate method
 } // This is the closing brace for the LoginActivity class

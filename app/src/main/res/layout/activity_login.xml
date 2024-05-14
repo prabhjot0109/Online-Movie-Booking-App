@@ -3,82 +3,80 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="@color/colorPrimary"
+    android:padding="32dp">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:contentDescription="TODO"
         android:src="@drawable/login_image" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView"
+        android:layout_below="@id/logo"
         android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="8dp"
-        app:contentPadding="16dp">
+        app:boxStrokeColor="@color/login_page_color"
+        app:hintTextColor="@color/login_page_color"
+        android:hint="E-mail">
 
-        <RelativeLayout
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/usernameTextInputLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Username">
+    </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/username"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameTextInputLayout"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="@color/login_page_color"
+        app:hintTextColor="@color/login_page_color"
+        android:hint="@string/title_password">
 
-            </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/passwordTextInputLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:layout_below="@id/usernameTextInputLayout"
-                android:layout_marginTop="16dp">
+    </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordTextInputLayout"
+        android:layout_marginTop="16dp"
+        android:text="Login"
+        android:backgroundTint="@color/login_page_color"
+        android:textColor="@color/logintextcolor"/>
 
-            </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="25dp"
+        android:text="@string/title_signup"
+        android:textColor="@color/colorOnPrimary"
+        android:backgroundTint="@color/colorSecondary"/>
 
-            <Button
-                android:id="@+id/login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/passwordTextInputLayout"
-                android:layout_marginTop="16dp"
-                android:text="Login"
-                android:background="@drawable/gradient_loginbutton"/>
-
-            <TextView
-                android:id="@+id/signup"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/login"
-                android:layout_marginTop="16dp"
-                android:text="Sign Up"
-                android:textColor="@android:color/holo_blue_light" />
-
-        </RelativeLayout>
-
-    </androidx.cardview.widget.CardView>
+    <com.google.android.gms.common.SignInButton
+        style="@style/ButtonLoginStyle"
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_marginTop="18dp" />
 
 </RelativeLayout>

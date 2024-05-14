@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigationView.TextAppearance.Active" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/ancillary_bold</item>
+        <item name="android:textColor">#ff5946</item>
+    </style>
+
+    <style name="BottomNavigationView.TextAppearance.Inactive" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:fontFamily">@font/bifocals</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="ButtonLoginStyle" parent="Theme.AppCompat.DayNight">
+        <item name="android:textColor">@color/logintextcolor</item>
+        <item name="android:background">@drawable/gradient_loginbutton</item>
+        <item name="android:font">@font/bifocals</item>
+        <item name="android:strokeColor">#000000</item>
+        <item name="colorControlActivated">@color/login_page_color</item>
+    </style>
+</resources>

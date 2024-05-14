@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">ShowSync</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Movies</string>
-    <string name="title_notifications">Profile</string>
+    <string name="title_search">Search</string>
+    <string name="title_notifications">Activity</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_login">Login</string>
+    <string name="title_signup">Sign Up</string>
+    <string name="title_password">Password</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_about">About</string>
+    <string name="title_help">Help</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="title_reset_password">Reset Password</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_change_email">Change Email</string>
+    <string name="title_change_username">Change Username</string>
+    <string name="title_change_profile_picture">Change Profile Picture</string>
+    <string name="title_change_theme">Change Theme</string>
+    <string name="title_change_language">Change Language</string>
+    <string name="title_google_signin">Continue with Google</string>
 </resources>
